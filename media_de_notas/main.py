@@ -1,8 +1,13 @@
-nota1 = input("digite a primeira nota: ")
-nota2 = input("digite a segunda nota: ")
-nota3 = input("digite a terceira nota: ")
+nota1 = float(input("digite a primeira nota: "))
+nota2 = float(input("digite a segunda nota: "))
+nota3 = float(input("digite a terceira nota: "))
 
+media = (nota1 + nota2 + nota3) / 3
 
-if (float(nota1) + float(nota2) + float(nota3)) / 3 >= 7:
-    print("Aprovado")
-else:   print("Reprovado")
+print(f"A média é: {media} ")
+
+if media >= 7:
+    print("Aluno aprovado")
+
+else:
+    print("Aluno reprovado")    
